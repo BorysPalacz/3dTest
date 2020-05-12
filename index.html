@@ -40,7 +40,7 @@
 
     var camera = new BABYLON.UniversalCamera("UniversalCamera", new BABYLON.Vector3(0, 0, -2), scene);
     // The first parameter can be used to specify which mesh to import. Here we import all meshes
-    BABYLON.SceneLoader.Append("https://raw.githubusercontent.com/BorysPalacz/3dTest/", "icp.glb", scene, function (newMeshes) {
+    BABYLON.SceneLoader.Append("https://raw.githubusercontent.com/BorysPalacz/3dTest/master/", "icp.glb", scene, function (newMeshes) {
         scene.createDefaultCameraOrLight(true);
         scene.activeCamera.attachControl(canvas, false);
     });
